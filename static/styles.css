@@ -1,0 +1,39 @@
+body {
+background : #A753ff;
+color : black;
+}
+
+#box {
+width : 30%;
+height : 40px;
+border-radius: 30px;
+border:0px;
+}
+#box:active {
+
+border: blue;
+}
+
+
+
+#id {
+font-size: 5rem;
+
+} 
+
+#btn {
+width : 80px;
+height : 40px;
+margin-top: 20px;
+border-radius: 10px;
+border:0px;
+}
+
+#btn:hover {
+background: #6b1aff;
+color: white;
+}
+
+center {
+margin-top: 20%;
+}

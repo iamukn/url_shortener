@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		 <title>Shrink URL</title>
+         <link rel = 'stylesheet' type='text/css' href='/static/styles.css'/>
+		 <meta charset="utf-8">
+		 <meta name='description' content='This is a url shortener'>
+		 <meta name='viewport' content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<section>
+			<div>
+			  <center>
+			     <form action={{url_for('shorten')}} method="post">
+			  	     <label id = 'lb' for="url">URL Shortener</label>
+			  	     <br/>
+				     <input id='box' type="text" name="url" placeholder = 'enter a url'/>
+				     <br/>
+				     <input id='btn' type="submit" name="submit">
+                 </form>
+                 <br>
+                 <p>{{err}}</p>
+                 <p><a href={{res}} target='_blank'>{{res}}</a></p>
+			  </center>
+			</div>
+		</section>
+		<section class="footer">
+			<footer>
+				
+			</footer>
+		</section>
+	</body>
+
+
+</html>
